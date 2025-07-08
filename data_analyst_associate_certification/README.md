@@ -1,4 +1,4 @@
-<img src="certificate/DA_Associate.png" alt="Certificate" width="600"> 
+<img src="certificate/DA_Associate.png" alt="Badge"> 
 
 # Practical Exam: Grocery Store Sales
 
