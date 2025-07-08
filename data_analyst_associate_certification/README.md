@@ -1,3 +1,5 @@
+<img src="certificate/DA_Associate.png" alt="Certificate" width="600"> 
+
 # Practical Exam: Grocery Store Sales
 
 FoodYum is a grocery store chain that is based in the United States.
