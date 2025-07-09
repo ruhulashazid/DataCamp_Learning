@@ -20,7 +20,7 @@ The data schema for ActiVR's database is outlined as follows:
 - **devices:** Holds data about the virtual reality devices used by the users.
 - **users:** Contains details about the users utilizing the ActiVR platform.
 
-![schema](schema.png)
+<img src="practical_exam_DE101/schema.png" alt="Schema"> 
 
 ## Task 1
 
@@ -44,15 +44,16 @@ Write an SQL query that returns the `users` table with the specified format, inc
 | workout_frequency        | Workout frequency as a lowercase string, one of: _minimal_, _flexible_, _regular_, _maximal_. Missing values should be replaced with _flexible_. |
 
 ```sql
---Full Schema Data Sample--
+--Just Full Schema Data Sample--
 -------------------------------
--- SELECT
---     e.event_id, e.game_id, e.device_id, e.user_id, e.event_time, u.age, u.registration_date, u.email, u.workout_frequency, g.game_type, d.device_name, d.version
--- FROM
---     events e, users u, games g, devices d
--- WHERE
---     e.user_id = u.user_id AND e.game_id = g.game_id AND e.device_id = d.device_id;
-
+SELECT
+    e.event_id, e.game_id, e.device_id, e.user_id, e.event_time, u.age, u.registration_date, u.email, u.workout_frequency, g.game_type, d.device_name, d.version
+FROM
+    events e, users u, games g, devices d
+WHERE
+    e.user_id = u.user_id AND e.game_id = g.game_id AND e.device_id = d.device_id;
+```
+```sql
 ------------Task-1-------------
 -------------------------------
 SELECT 
